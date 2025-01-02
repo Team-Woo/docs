@@ -51,7 +51,7 @@ The format of the data your webhook URL will receive in a `POST` request.
 | user      | `snowflake` | Discord ID of the user who voted.                                                                   |
 | type      | `string`    | The type of the vote (should always be `"upvote"` except when using the test button it's `"test"`). |
 | isWeekend | `boolean`   | Whether the weekend multiplier is in effect, meaning users votes count as two.                      |
-| query?    | `string`    | Query string params found on the /bot/:ID/vote page. Example: ?a=1&b=2.                             |
+| query?    | `string` | `null`    | Query string params found on the /bot/:ID/vote page. Example: ?a=1&b=2.                             |
 
 #### Server Webhooks
 
@@ -60,7 +60,7 @@ The format of the data your webhook URL will receive in a `POST` request.
 | guild  | `snowflake` | Discord ID of the guild that received a vote.                                                       |
 | user   | `snowflake` | Discord ID of the user who voted.                                                                   |
 | type   | `string`    | The type of the vote (should always be `"upvote"` except when using the test button it's `"test"`). |
-| query? | `string`    | Query string params found on the /servers/:ID/vote page. Example: ?a=1&b=2.                         |
+| query? | `string` | `null`    | Query string params found on the /servers/:ID/vote page. Example: ?a=1&b=2.                         |
 
 ## More Events
 
